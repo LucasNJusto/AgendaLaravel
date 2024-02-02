@@ -26,4 +26,10 @@ class cadastrarUsuario extends Controller
         return redirect('/cadastrar');
     }//Fim do Método store
 
+    public function consultar(){
+        $dados = cadastrarUsuarioModel::all();
+        
+        return view('paginas.consultar', compact('dados'));
+    }//fim do metodo
+
 }//fim da classe

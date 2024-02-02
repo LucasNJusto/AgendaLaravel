@@ -10,24 +10,21 @@
     
         </div>
         <div class="col">
-          <div class="card" style="width: 30rem;">
+          <div class="card" style="width: 40rem;">
           <div class="card-body">
-          <img src="logo.png" class="card-img-top" alt="Logo">
           <form action="/cadastrar/salvar" method="POST">
             @csrf <!-- Valida o formulario -->
 
-            <h1> Cadastrar <span class="badge bg-secondary"></span></h1>
+            <h1> Consultar Eventos e Serviços <span class="badge bg-secondary"></span></h1>
             <br>
-            <lable> Email: </lable>
-            <input type="text" id="email" name="email" placeholder="Informe seu email" required/><br><br>
-        
-            <label> Senha: </label>
-            <input type="text" id="senha" name="senha" placeholder="Digite sua senha" required/><br><br> 
- 
-            <button type="submit">Enviar</button>
+            <div class="container">
+            @foreach($dados as $dado)
+                <li class="list-group-item">Tarefa: {{$dado->tarefa}} | Sobre: {{$dado->tipo}} | Data: {{$dado->data}}</li>
+                <hr>
+            @endforeach
+            </div>
           </form>
-          <hr>
-          <p style="color:#a9a9a9">Já possui conta? acesse agora → <a href="login" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">Fazer Login</a></p>
+
           </div>
         </div>
         </div>

@@ -18,5 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/cadastrar', [\App\Http\Controllers\cadastrarUsuario::class,'index']);
 Route::post('/cadastrar/salvar',[\App\Http\Controllers\cadastrarUsuario::class, 'store']);
+Route::get('/consultar',[\App\Http\Controllers\cadastrarUsuario::class, 'consultar']);
 
-Route::get('/login', [\App\Http\Controllers\loginUsuario::class,'index']);
+Route::get('/calendario',[\App\Http\Controllers\agenda::class,'index']);
+Route::post('/calendario/salvar',[\App\Http\Controllers\agenda::class, 'store']);
+Route::get('/consultarAgenda',[\App\Http\Controllers\agenda::class,'consultar']);
+

@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Agenda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,16 +26,21 @@
                         <a class="nav-link" href="cadastrar">Cadastrar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="calendario">Calendario</a>
+                        <a class="nav-link" href="calendario">Calendario |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="consultar">Consultrar</a>
+                        <a class="nav-link" href="consultar">Consultar Cadastros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consultarAgenda">Consultar Serviços da Agenda</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     
+</nav>
     <h1>{{$title}}</h1>
 
     <div>
