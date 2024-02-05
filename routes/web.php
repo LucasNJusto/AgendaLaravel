@@ -24,3 +24,9 @@ Route::get('/calendario',[\App\Http\Controllers\agenda::class,'index']);
 Route::post('/calendario/salvar',[\App\Http\Controllers\agenda::class, 'store']);
 Route::get('/consultarAgenda',[\App\Http\Controllers\agenda::class,'consultar']);
 
+Route::get('login ', function(){
+    return view('paginas/login');
+});
+Route::get('home ', function(){
+    return view('paginas/home');
+});
