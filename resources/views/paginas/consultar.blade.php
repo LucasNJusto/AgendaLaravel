@@ -19,10 +19,9 @@
             <br>
             <div class="container">
         @foreach($dados as $dado)
-
-            <li class="list-group-item">Email: {{$dado->email}}</li>
-            <li class="list-group-item">Senha: {{$dado->senha}}</li>
-            <hr>
+                <li class="list-group-item">Email: {{$dado->email}}</li>
+                <li class="list-group-item">Senha: {{$dado->senha}}</li>
+                <hr>
         @endforeach
             </div>
           </form>

@@ -30,3 +30,11 @@ Route::get('login ', function(){
 Route::get('home ', function(){
     return view('paginas/home');
 });
+
+Route::get('editar ', function(){
+    return view('paginas/editar');
+});
+
+Route::get('/editar/{id}', [\App\Http\Controllers\cadastrarUsuario::class, 'editar']);
+Route::get('/atualizar/{id}', [\App\Http\Controllers\cadastrarUsuario::class, 'atualizar']);
+Route::get('/excluir/{id}',[\App\Http\Controllers\cadastrarUsuario::class, 'excluir']);

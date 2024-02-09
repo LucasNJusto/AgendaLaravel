@@ -1,5 +1,5 @@
 <x-layout title="">
-    <br><br><br><br><br>
+    <br><br>
     <div class="container text-center">
         <div class="row">
             <div class="col">
@@ -31,10 +31,27 @@
                                     </div>
                                 </div>
                             </div>
+                        <div align="center">
+                            <br>    
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Editar Tarefas e Cadastros</h5>
+                                        <p class="card-text">Tarefas agendadas que tem que ser realizadas e tarefas concluidas.</p>
+                                        <img width="35%" src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" class="img-fluid" alt="...">
+                                        <br><br>
+                                        <a href="editar" class="btn btn-primary">Editar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>  
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <hr>
+    <br><br>
 </x-layout>

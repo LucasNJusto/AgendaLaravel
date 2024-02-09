@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="consultarAgenda">Consultar Serviços da Agenda</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="editar">Editar</a>
+                    </li>
                 </ul>
             </div>
         </div>

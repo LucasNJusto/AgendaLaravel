@@ -22,7 +22,9 @@
             <label> Senha: </label>
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required/><br><br> 
  
-            <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button><br><br>
+            <a class="btn btn-primary" href="atualizar">Atualizar</a>
+        <a class="btn btn-primary" href="consultar">Consultar</a>
           </form>
           <hr>
           <p style="color:#a9a9a9">Já possui conta? acesse agora → <a href="login" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">Fazer Login</a></p>

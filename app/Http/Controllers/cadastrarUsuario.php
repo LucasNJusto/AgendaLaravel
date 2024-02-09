@@ -28,8 +28,32 @@ class cadastrarUsuario extends Controller
 
     public function consultar(){
         $dados = cadastrarUsuarioModel::all();
-        
+
         return view('paginas.consultar', compact('dados'));
     }//fim do metodo
+
+
+    /* EDITAR, ATUALIZAR E EXCLUIR */
+    public function editar($id)
+    {
+        $dado = cadastrarUsuarioModel::findOrFail($id);
+
+        return view('paginas.editar', compact('dados'));
+    }//fim do método
+
+    public function atualizar(Request $request, $dados)
+    {
+        cadastrarUsuarioModel::where('dado',$dado)->update($request->all());
+
+        return redirect('consultar');
+    }//fim do atualizar
+
+    public function excluir(Request $request, $dados)
+    {
+        cadastrarUsuarioModel::where('dado',$dado)->delete($request->all());
+
+        return redirect('consultar');
+    }//fim do excluir
+    
 
 }//fim da classe
